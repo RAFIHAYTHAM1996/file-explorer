@@ -1,0 +1,42 @@
+@import '../vars.scss';
+
+.container {
+    min-height: 100vh;
+    background-color: $theme3;
+
+    .sub-container {
+        display: inline-flex;
+        flex-direction: column;
+        top: 0px;
+        right: 0px;
+        height: 100vh;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px 2rem;
+        vertical-align: top;
+
+        @include respond-to('max', $xlarge-width) {
+            display: none;
+        }
+
+        .app-title, .author {
+            display: inline-block;
+            margin: 0px;
+            font-family: 'opensans-bold', Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+        }
+
+        .app-title {
+            letter-spacing: 5px;
+            word-spacing: 10px;
+            color: $theme2;
+        }
+
+        .author {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            margin-right: 5px;
+            color: $theme5;
+        }
+    }
+}

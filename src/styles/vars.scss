@@ -1,0 +1,18 @@
+$ASSET_PATH: '/assets/' !default;
+
+@mixin respond-to($condition, $media) {
+  @media only screen and (#{$condition}-width: #{$media}) {
+      @content;
+  }
+}
+
+$theme1: #FAFAFA;
+$theme2: #999;
+$theme3: #282828;
+$theme4: #343434;
+$theme5: #444444;
+
+$xlarge-width: '1199px';
+$large-width: '991px';
+$medium-width: '767px';
+$small-width: '575px';

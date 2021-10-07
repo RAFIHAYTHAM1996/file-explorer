@@ -1,0 +1,32 @@
+$fonts: '#{$ASSET_PATH}fonts/';
+
+@font-face {
+    font-family: 'opensans';
+    src: url($fonts + 'opensans/opensans-regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+  font-family: 'opensans-light';
+  src: url($fonts + 'opensans/opensans-light.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'opensans-semibold';
+  src: url($fonts + 'opensans/opensans-semibold.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'opensans-bold';
+  src: url($fonts + 'opensans/opensans-bold.ttf');
+  font-style: normal;
+  font-display: fallback;
+}
