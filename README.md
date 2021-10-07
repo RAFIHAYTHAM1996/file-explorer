@@ -14,12 +14,12 @@ Powered by [Next.js](https://nextjs.org/) (A NodeJs and React framework) and [So
 
 ## How It Works
 1. Server runs and initializes websockets through Socket.IO
-1. Client app (UI) creates a socket connection with the server and then requests a list of initial directories to display
-1. First directory on the list is expanded automatically. When any directory is expanded, two requests are made:
-  - To retrieve a list of contents immediately within that directory
-  - To watch the directory and its immediate contents for any changes done outside of the application
-1. Upon FileSystem events, the server and client communicate through sockets to perform updates. This avoids otherwise expensive polling operations.
-1. When a directory is collapsed, a request to unwatch that directory is made.
+2. Client app (UI) creates a socket connection with the server and then requests a list of initial directories to display
+3. First directory on the list is expanded automatically. When any directory is expanded, two requests are made:
+  1.1 To retrieve a list of contents immediately within that directory
+  1.2 To watch the directory and its immediate contents for any changes done outside of the application
+4. Upon FileSystem events, the server and client communicate through sockets to perform updates. This avoids otherwise expensive polling operations.
+5. When a directory is collapsed, a request to unwatch that directory is made.
 
 ## How To Run
 
