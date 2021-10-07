@@ -9,7 +9,8 @@ Powered by [Next.js](https://nextjs.org/) (A NodeJs and React framework) and [So
 - An elegant tree view of directories and nested contents
 - Expandable/collapsable sections so you focus on what matters most
 - Changes to files and directories made on the host machine (such as addition, rename, removal and deletion) are reflected
-- A single click to quickly collapse all sections and start over
+- Collapse all sections and start over with a single click
+- Tree view is expandable (click and drag and the handle on the bottom right corner of that panel)
 
 
 ## How It Works
@@ -21,7 +22,7 @@ Powered by [Next.js](https://nextjs.org/) (A NodeJs and React framework) and [So
 4. Upon FileSystem events, the server and client communicate through sockets to perform updates. This avoids otherwise expensive polling operations.
 5. When a directory is collapsed, a request to unwatch that directory is made.
 
-## How To Run
+## Try It!
 
 ### Prerequisite(s)
 Minimum Node version required (v12.16.1). To upgrade your Node version, you may use [nvm](https://github.com/nvm-sh/nvm).
