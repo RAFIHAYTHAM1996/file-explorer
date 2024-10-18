@@ -1,4 +1,4 @@
-# File Explorer
+# (DEMO APP) File Explorer
 
 Powered by [Next.js](https://nextjs.org/) (A NodeJs and React framework) and [Socket.IO](https://socket.io/), this file explorer allows you to view file trees on your system in an elegant way.
 
